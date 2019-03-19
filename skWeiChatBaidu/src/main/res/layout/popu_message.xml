@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/add_friends"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/message_add_friend" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:text="@string/add_friends"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pop_window" />
+
+    </LinearLayout>
+
+    <View style="@style/MenuDivider" />
+
+    <LinearLayout
+        android:id="@+id/create_group"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/message_creat_group" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:text="@string/create_group"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pop_window" />
+
+    </LinearLayout>
+
+    <View style="@style/MenuDivider" />
+
+    <LinearLayout
+        android:id="@+id/scanning"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/messaeg_scnning" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:text="@string/scanning"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pop_window" />
+
+    </LinearLayout>
+
+    <View style="@style/MenuDivider" />
+
+    <LinearLayout
+        android:id="@+id/receipt_payment"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/messaeg_scnning" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:text="@string/receipt_payment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pop_window" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/MenuDivider"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/near_person"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/message_near_person" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:text="@string/near_person"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pop_window" />
+
+    </LinearLayout>
+
+    <View style="@style/MenuDivider" />
+
+    <LinearLayout
+        android:id="@+id/search_public_number"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:text="@string/search_public_number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pop_window" />
+
+    </LinearLayout>
+
+</LinearLayout>

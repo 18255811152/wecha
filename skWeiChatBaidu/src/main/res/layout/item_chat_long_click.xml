@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/item_chat_text_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chat_text_long"
+        android:orientation="horizontal"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/item_chat_copy_tv"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:drawableTop="@drawable/copy"
+            android:gravity="center"
+            android:text="@string/copy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/three_level_content"/>
+
+        <TextView
+            android:id="@+id/item_chat_relay_tv"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:drawableTop="@drawable/forward"
+            android:gravity="center"
+            android:text="@string/forward"
+            android:textColor="@color/white"
+            android:textSize="@dimen/three_level_content"/>
+
+        <TextView
+            android:id="@+id/item_chat_collection_tv"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:drawableTop="@drawable/save"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/save_emoticon"
+            android:textColor="@color/white"
+            android:textSize="@dimen/three_level_content"/>
+
+        <TextView
+            android:id="@+id/collection_other"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:drawableTop="@drawable/collection"
+            android:gravity="center"
+            android:text="@string/collection"
+            android:textColor="@color/white"
+            android:textSize="@dimen/three_level_content"/>
+
+        <TextView
+            android:id="@+id/item_chat_back_tv"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:drawableTop="@drawable/withdraw"
+            android:gravity="center"
+            android:text="@string/withdraw"
+            android:textColor="@color/white"
+            android:textSize="@dimen/three_level_content"/>
+
+        <TextView
+            android:id="@+id/item_chat_del_tv"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:drawableTop="@drawable/delete"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/three_level_content"/>
+
+        <TextView
+            android:id="@+id/item_chat_more_select"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:drawableTop="@drawable/qch"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/multi_select"
+            android:textColor="@color/white"
+            android:textSize="@dimen/three_level_content"/>
+
+        <TextView
+            android:id="@+id/item_chat_record"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:drawableTop="@drawable/recording"
+            android:gravity="center"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:text="@string/start_record"
+            android:textColor="@color/white"
+            android:textSize="@dimen/three_level_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:visibility="visible"/>
+
+</LinearLayout>

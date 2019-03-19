@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/normal_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/balance_ly"
+            style="@style/IMTbleLine"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/balance"
+                android:textColor="@color/app_black"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textview_show_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:text="@string/default_balance"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recharge_title_ly"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/balance_ly"
+            android:layout_marginTop="19dp"
+            android:background="@color/normal_bg">
+
+            <TextView
+                android:id="@+id/moneyCZTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/input_recharge_money"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/enter_money"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/recharge_title_ly"
+            android:background="@color/normal_bg">
+
+            <RelativeLayout
+                android:id="@+id/recharge_ly"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/normal_bg">
+
+                <RelativeLayout
+                    android:id="@+id/input_ly"
+                    style="@style/IMTbleLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/textview_tishi"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/hint_money"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/redpacket_text_size_label"/>
+
+                    <EditText
+                        android:id="@+id/edit_recharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="50dp"
+                        android:layout_toRightOf="@+id/textview_tishi"
+                        android:background="#0000"
+                        android:gravity="center_vertical|right"
+                        android:hint="@string/input_recharge_money"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/redpacket_text_size_label"/>
+
+                    <TextView
+                        android:id="@+id/textview_danwei"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="@string/rmb"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/redpacket_text_size_label"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/select_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/input_ly"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_recharge_5"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/recharge_5"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/money_size"/>
+
+                    <TextView
+                        android:id="@+id/textview_recharge_10"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="@string/recharge_10"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/money_size"/>
+
+                    <TextView
+                        android:id="@+id/textview_recharge_20"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="@string/recharge_20"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/money_size"/>
+
+                    <TextView
+                        android:id="@+id/textview_recharge_50"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="@string/recharge_50"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/money_size"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/select_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/select_1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_recharge_100"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/recharge_100"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/money_size"/>
+
+                    <TextView
+                        android:id="@+id/textview_recharge_200"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="@string/recharge_200"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/money_size"/>
+
+                    <TextView
+                        android:id="@+id/textview_recharge_300"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="@string/recharge_300"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/money_size"/>
+
+                    <TextView
+                        android:id="@+id/textview_recharge_500"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="@string/recharge_500"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/money_size"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="100dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/recharge_btn"
+                        style="@style/BossGreenBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:text="@string/recharge"
+                        android:textSize="@dimen/redpacket_text_size_button"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/recharge_btn_quxian"
+                        style="@style/BossGreenBtn"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:text="@string/put_forward"
+                        android:textSize="@dimen/redpacket_text_size_button"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

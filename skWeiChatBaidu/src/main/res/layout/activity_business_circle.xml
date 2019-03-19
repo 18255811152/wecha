@@ -1,0 +1,40 @@
+<com.sk.weichat.view.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar" />
+
+    <com.sk.weichat.view.ResizeLayout
+        android:id="@+id/resize_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pull_refresh_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_view"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrDrawableEnd="@drawable/default_ptr_rotate"
+            ptr:ptrDrawableStart="@drawable/default_ptr_flip"
+            ptr:ptrHeaderTextColor="@color/black"
+            ptr:ptrMode="both"
+            ptr:ptrOverScroll="false"
+            ptr:ptrScrollingWhileRefreshingEnabled="true"
+            ptr:ptrShowIndicator="false" />
+
+        <com.sk.weichat.view.PMsgBottomView
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+    </com.sk.weichat.view.ResizeLayout>
+
+</com.sk.weichat.view.MyLinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar"/>
+
+    <TextView
+        android:id="@+id/connect_state_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textSize="@dimen/me_title_size"/>
+
+    <ListView
+        android:id="@+id/screen_settings_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_gravity="center_vertical|fill_horizontal"
+        android:layout_weight="1"
+        android:background="@color/app_white"
+        android:columnWidth="60dp"
+        android:horizontalSpacing="10dp"
+        android:isScrollContainer="true"
+        android:numColumns="auto_fit"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"/>
+
+    <Button
+        android:id="@+id/reregister_btn"
+        style="@style/BossGreenBtn"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/back_elipse_grey_fill"
+        android:text="@string/reconnect"/>
+
+</LinearLayout>

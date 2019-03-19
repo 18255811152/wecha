@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/cover_img"
+        android:layout_width="fill_parent"
+        android:layout_height="245dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar_normal"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/shape_gray_square_bg"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="2dip"
+        app:riv_oval="true" />
+
+    <LinearLayout
+        android:id="@+id/tip_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/Grey_600"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <com.sk.weichat.view.CircleImageView
+            android:id="@+id/tip_avatar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/avatar_normal"/>
+
+        <TextView
+            android:id="@+id/tip_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tip_receive_new_message"
+            android:textColor="@color/white"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
